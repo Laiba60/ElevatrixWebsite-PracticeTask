@@ -113,6 +113,7 @@ button {
   align-items: self-start;
   margin-right: 50px;
   font-size: 20px;
+  margin-top:20px;
 }
 footer {
   display: flex;
