@@ -58,6 +58,43 @@ body {
   font-size: 28px;
   cursor: pointer;
 }
+.section-wrapper {
+  width: 100%;
+  height: 500px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #777777;
+}
+
+.bg-row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.onebg-img {
+  flex: 2;
+  background-image: url("images/img-home01-9DS9SWD.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.twobg-img {
+  position: absolute;
+
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background-image: url("images/bg.png");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
 .lastthird {
   width: 100%;
   padding: 20px 0px 0px;
@@ -79,6 +116,54 @@ body {
   font-size: 20px;
   font-family: "sans-serif";
 }
+.servicescontainer {
+  width: 100%;
+  color: #7777;
+  font-size: 15px;
+  padding: 0px 15px;
+}
+.innerservices {
+  width: 100%;
+  color: #777777;
+  font-size: 15px;
+  margin: 0px 24px;
+}
+.innerservicesonediv {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.innerservicesonediv h2 {
+  font-size: 14px;
+  color: #777777;
+  text-align: center;
+}
+.innerservicesonediv h3 {
+  font-size: 50px;
+  color: #ffff;
+  text-align: center;
+}
+.innerservicestwodiv {
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.Websitediv {
+  width: 270px;
+  height: 333px;
+  padding: 40px 50px 32px;
+  color: #777777;
+  font-size: 15px;
+  background-color: #101010;
+}
+
 .scrollbarmain {
   width: 100%;
   color: #777;
