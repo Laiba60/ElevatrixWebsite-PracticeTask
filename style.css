@@ -58,10 +58,52 @@ body {
   font-size: 28px;
   cursor: pointer;
 }
+.awardwinning{
+width:100%;
+padding:0px 15px;
+color:#777777;
+font-size:15px;
+}
+
+.innerdivaward{
+width:100%;
+margin:44px 0px;
+padding:20px 0px;
+font-size:15px;
+color:#777777;
+display:flex;
+}
+.images{
+  display:flex;
+  margin-left:50px;
+}
+.intro{
+  color:#777777;
+  font-size:15px;
+  padding:8px 0px 7px;
+}
+.description{
+  width:100%;
+  max-width: 40%;
+  margin-left:90px;
+}
+.consult{
+  color:#777777;
+  background-color: #F5900D;
+  padding:21px 50px;
+  font-size:16px;
+    display: inline-block;
+  border-radius: 5px;
+}
+.consult a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 .section-wrapper {
   width: 100%;
   height: 500px;
-  padding: 0 15px;
+  padding: 66px 15px 0px;
   font-size: 14px;
   color: #777777;
 }
