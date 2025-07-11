@@ -58,41 +58,55 @@ body {
   font-size: 28px;
   cursor: pointer;
 }
-.awardwinning{
-width:100%;
-padding:0px 15px;
-color:#777777;
-font-size:15px;
+.brandssec {
+  width: 100%;
 }
 
-.innerdivaward{
-width:100%;
-margin:44px 0px;
-padding:20px 0px;
-font-size:15px;
-color:#777777;
-display:flex;
+.innerbrandsec {
+  width: 100%;
+  color: #777777;
+  font-size: 15px;
+  padding: 10px 0px;
 }
-.images{
-  display:flex;
-  margin-left:50px;
+.brandsdisplay {
+  width: 70%;
+  display: flex;
 }
-.intro{
-  color:#777777;
-  font-size:15px;
-  padding:8px 0px 7px;
+.awardwinning {
+  width: 100%;
+  padding: 0px 15px;
+  color: #777777;
+  font-size: 15px;
 }
-.description{
-  width:100%;
+
+.innerdivaward {
+  width: 100%;
+  margin: 44px 0px;
+  padding: 20px 0px;
+  font-size: 15px;
+  color: #777777;
+  display: flex;
+}
+.images {
+  display: flex;
+  margin-left: 50px;
+}
+.intro {
+  color: #777777;
+  font-size: 15px;
+  padding: 8px 0px 7px;
+}
+.description {
+  width: 100%;
   max-width: 40%;
-  margin-left:90px;
+  margin-left: 90px;
 }
-.consult{
-  color:#777777;
-  background-color: #F5900D;
-  padding:21px 50px;
-  font-size:16px;
-    display: inline-block;
+.consult {
+  color: #777777;
+  background-color: #f5900d;
+  padding: 21px 50px;
+  font-size: 16px;
+  display: inline-block;
   border-radius: 5px;
 }
 .consult a {
