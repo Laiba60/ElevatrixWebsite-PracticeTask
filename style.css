@@ -58,6 +58,74 @@ body {
   font-size: 28px;
   cursor: pointer;
 }
+.hero-section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.hero-left {
+  flex: 1;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 40px;
+}
+
+.hero-left h1 {
+  font-size: 5.6rem;
+  font-weight:900;
+  line-height: 1.2;
+  max-width: 500px;
+  margin-bottom: 30px;
+  z-index:2;
+}
+
+.cta-button {
+ background-color: #e69500;
+  color: white;
+  padding: 16px 0px;        
+  display: inline-block;
+ 
+  text-decoration: none;
+  
+  transition: background-color 0.3s ease;
+  width:340px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #e69500;
+}
+
+.hero-right {
+  flex: 1.5;
+  display: flex;
+}
+
+.img-column {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img2 {
+  background-image: url("https://elevatrixsolutions.com/wp-content/uploads/2025/07/img-home01-88KB9TF.jpg");
+  width: 230px;
+}
+
+.img3 {
+  background-image: url("https://elevatrixsolutions.com/wp-content/uploads/2025/07/img-home01-BK7RLZ9.jpg");
+  width: 542px;
+}
+.img1 {
+  background-image: url("images\slider-1-bg-1.png");
+  width: 230px;
+}
 .brandssec {
   width: 100%;
 }
@@ -76,11 +144,36 @@ body {
   flex-wrap: wrap;
   gap: 20px;
 }
+.brand-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin: 40px 0;
+  justify-content: center;
+}
+
+.brand-divider::before,
+.brand-divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #777777;
+}
+
+.brand-divider span {
+  font-size: 14px;
+  color: #777;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .awardwinning {
   width: 100%;
   padding: 0px 15px;
   color: #777777;
   font-size: 15px;
+  border-bottom:1px solid #777777;
 }
 
 .innerdivaward {
@@ -111,7 +204,7 @@ body {
   padding: 21px 50px;
   font-size: 16px;
   display: inline-block;
-  border-radius: 5px;
+  
 }
 .consult a {
   color: white;
@@ -124,6 +217,7 @@ body {
   padding: 66px 15px 0px;
   font-size: 14px;
   color: #777777;
+  margin-bottom:20px;
 }
 
 .bg-row {
@@ -480,13 +574,11 @@ footer {
   color: #f5900d;
 }
 
-/* Bottom */
 .footer-bottom {
   text-align: center;
   font-size: 14px;
 }
 
-/* Scroll to top */
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
@@ -506,7 +598,6 @@ footer {
   transform: scale(1.1);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 40px;
@@ -514,5 +605,142 @@ footer {
 
   .overlay-images img {
     display: none;
+  }
+}
+/* Tablet devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+    flex: unset;
+    padding: 40px 20px;
+  }
+
+  .cta-button {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .img1, .img2, .img3 {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .lastthirdone {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .description {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .lastpart {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Websitediv {
+    width: 90%;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-left h1 {
+    font-size: 36px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .cta-heading {
+    font-size: 42px;
+  }
+
+  .brand-divider span {
+    font-size: 12px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer-links ul {
+    text-align: center;
+  }
+
+  .verifiedpart {
+    font-size: 12px;
+  }
+
+  .onediv, .secdiv {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .scrollbarscetion {
+    gap: 12px;
+  }
+
+  .video-button {
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .center-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-icon {
+    font-size: 16px;
+  }
+
+  .circle-text text {
+    font-size: 5px;
+  }
+
+  .image-button-box,
+  .image-button-box img,
+  .image-button-box a {
+    width: 80px;
+    height: 80px;
+  }
+
+  .innerservicesonediv h3 {
+    font-size: 32px;
+  }
+
+  .Websitediv {
+    height: auto;
+    padding: 20px;
   }
 }
