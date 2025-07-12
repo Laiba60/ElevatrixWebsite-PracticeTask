@@ -7,6 +7,29 @@ body {
   font-family: Arial, sans-serif;
   background-color: #000;
 }
+hero-section,
+.section-wrapper,
+.wrapper,
+.scrollbarscetion {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.img1,
+.img2,
+.img3 {
+  max-width: 100%;
+}
+
+.twobg-img {
+  max-width: 100%;
+}
+
+.image-button-box a {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -77,23 +100,23 @@ body {
 
 .hero-left h1 {
   font-size: 5.6rem;
-  font-weight:900;
+  font-weight: 900;
   line-height: 1.2;
   max-width: 500px;
   margin-bottom: 30px;
-  z-index:2;
+  z-index: 2;
 }
 
 .cta-button {
- background-color: #e69500;
+  background-color: #e69500;
   color: white;
-  padding: 16px 0px;        
+  padding: 16px 0px;
   display: inline-block;
- 
+
   text-decoration: none;
-  
+
   transition: background-color 0.3s ease;
-  width:340px;
+  width: 340px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -167,47 +190,50 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
 }
-
 .awardwinning {
-  width: 100%;
-  padding: 0px 15px;
-  color: #777777;
-  font-size: 15px;
-  border-bottom:1px solid #777777;
+  padding: 60px 120px;
+  background-color: #000;
 }
 
 .innerdivaward {
-  width: 100%;
-  margin: 44px 0px;
-  padding: 20px 0px;
-  font-size: 15px;
-  color: #777777;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
-.images {
-  display: flex;
-  margin-left: 50px;
-}
-.intro {
-  color: #777777;
-  font-size: 15px;
-  padding: 8px 0px 7px;
-}
-.description {
+
+.innerdivaward .images img {
   width: 100%;
-  max-width: 40%;
-  margin-left: 90px;
+  max-width: 490px;
+  height: auto;
+  border-radius: 50%;
 }
-.consult {
-  color: #777777;
-  background-color: #f5900d;
-  padding: 21px 50px;
-  font-size: 16px;
-  display: inline-block;
-  
+
+.innerdivaward .description {
+  flex: 1;
+  min-width: 280px;
 }
-.consult a {
+
+.description h3 {
+  font-size: 32px;
   color: white;
+}
+
+.description p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.7;
+}
+
+.description .consult a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 19px 40px;
+  background: #f5900d;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -217,7 +243,7 @@ body {
   padding: 66px 15px 0px;
   font-size: 14px;
   color: #777777;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .bg-row {
@@ -382,7 +408,7 @@ text {
   display: flex;
   gap: 10px;
   flex-wrap: nowrap;
-  /* 👈 force one line */
+
   overflow-x: auto;
 }
 .onediv,
@@ -430,7 +456,7 @@ text {
 .contact-section {
   width: 100%;
   max-width: 1181px;
-  min-height: 200px; /* Enough room */
+  min-height: 200px;
   padding: 10px 0;
   display: flex;
   justify-content: center;
@@ -451,23 +477,24 @@ text {
 }
 
 .image-button-box img {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .image-button-box a {
   position: absolute;
-  top: -10px;
-  right: 10px;
+  top: 23px;
+  left: 200px;
   transform: translateX(-50%);
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: #f5900d;
   color: #fff;
-  font-size: 32px;
+  font-size: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -480,7 +507,7 @@ text {
 }
 .cta-heading {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 60px;
   font-size: 70px;
   color: #fff;
 }
@@ -551,7 +578,6 @@ footer {
   text-shadow: 1px 1px 1px #000;
 }
 
-/* Links */
 .footer-links {
   display: flex;
   justify-content: center;
@@ -619,17 +645,20 @@ footer {
     height: auto;
   }
 
-  .hero-left, .hero-right {
+  .hero-left,
+  .hero-right {
     width: 100%;
     flex: unset;
     padding: 40px 20px;
   }
 
   .cta-button {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%;
   }
 
-  .img1, .img2, .img3 {
+  .img1,
+  .img2,
+  .img3 {
     width: 100%;
     min-height: 250px;
   }
@@ -661,7 +690,6 @@ footer {
   }
 }
 
-/* Mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
   .hero-left h1 {
     font-size: 36px;
@@ -699,7 +727,8 @@ footer {
     font-size: 12px;
   }
 
-  .onediv, .secdiv {
+  .onediv,
+  .secdiv {
     width: 90%;
     min-width: unset;
   }
@@ -742,5 +771,21 @@ footer {
   .Websitediv {
     height: auto;
     padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .innerdivaward {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .description h3 {
+    font-size: 26px;
+  }
+
+  .innerdivaward .images img {
+    max-width: 300px;
+    margin-bottom: 20px;
   }
 }
